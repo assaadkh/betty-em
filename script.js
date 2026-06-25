@@ -1,12 +1,12 @@
 const projects = {
-  "itc-mixer": {
+  "ibc-mixer": {
     category: "Mixing systems",
-    title: "ITC Mixer",
+    title: "IBC Mixer",
     description:
       "Tank-mounted mixer system for production and dosing work. The project combines mechanical mixing hardware with electro-mechanical control for controlled operation on site.",
     images: [
-      "sample of products/ITC Mixer/6ba4d309-cedd-4802-8313-b58b00057329.png",
-      "sample of products/ITC Mixer/a5f6f79c-6541-4f4e-a69b-75e92d0bec0d.png",
+      "sample of products/IBC Mixer/6ba4d309-cedd-4802-8313-b58b00057329.png",
+      "sample of products/IBC Mixer/a5f6f79c-6541-4f4e-a69b-75e92d0bec0d.png",
     ],
   },
   "belt-conveyor": {
@@ -183,4 +183,43 @@ if (params.get("success") === "true") {
   if (successMessage) {
     successMessage.hidden = false;
   }
+}
+
+const contactForm = document.querySelector(".contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const errorMessage = document.querySelector("#form-error");
+    const originalButtonText = submitButton.textContent;
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+    if (errorMessage) {
+      errorMessage.hidden = true;
+    }
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      window.location.href = contactForm.dataset.successPage || "thank-you.html";
+    } catch (error) {
+      submitButton.disabled = false;
+      submitButton.textContent = originalButtonText;
+      if (errorMessage) {
+        errorMessage.hidden = false;
+      }
+    }
+  });
 }
