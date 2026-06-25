@@ -79,17 +79,35 @@ img {
 .header-contact {
   display: grid;
   justify-items: end;
-  gap: 4px;
+  gap: 5px;
   border: 2px solid var(--navy);
   border-radius: 6px;
-  padding: 9px 14px;
+  padding: 10px 14px;
   color: var(--navy);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 800;
 }
 
-.header-contact a:last-child {
-  font-size: 0.78rem;
+.header-contact a {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.header-contact img {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-icon {
+  color: var(--navy);
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
 }
 
 .hero {
@@ -800,8 +818,9 @@ body.modal-open {
 .contact-links {
   display: grid;
   justify-items: start;
-  gap: 10px;
+  gap: 12px;
   margin-top: 22px;
+  width: min(100%, 520px);
 }
 
 .form-success {
@@ -822,15 +841,42 @@ body.modal-open {
   font-weight: 800;
 }
 
-.phone-link {
-  display: inline-flex;
-  border-bottom: 3px solid var(--yellow);
-  color: var(--navy);
-  font-size: 1.25rem;
-  font-weight: 800;
+.contact-method {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  border-left: 4px solid var(--yellow);
+  border-radius: 6px;
+  padding: 13px 16px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 24px rgba(8, 38, 92, 0.06);
 }
 
-.phone-link:hover {
+.contact-symbol {
+  color: var(--navy);
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
+.contact-method img {
+  width: 26px;
+  height: 26px;
+  justify-self: center;
+}
+
+.contact-method a {
+  min-width: 0;
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.contact-method a:hover {
   color: var(--red);
 }
 
@@ -1071,11 +1117,12 @@ body.modal-open {
 
   .header-contact {
     padding: 9px 11px;
-    font-size: 0.78rem;
+    font-size: 0.74rem;
   }
 
-  .header-contact a:last-child {
-    font-size: 0.68rem;
+  .header-contact a {
+    grid-template-columns: 18px minmax(0, 1fr);
+    gap: 6px;
   }
 
   .nav {
@@ -1141,6 +1188,11 @@ body.modal-open {
 
   .project-details {
     padding: 18px;
+  }
+
+  .contact-method {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .project-thumbs {
