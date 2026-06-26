@@ -92,7 +92,6 @@ const projects = {
       "Concrete batching system for aggregate storage, transfer, dosing, and controlled mixing. Built around production reliability and practical site operation.",
     images: [
       "sample of products/concrete batching plant/cover.webp",
-      "sample of products/concrete batching plant/1a561b30-7773-4a75-baa4-d5b3183f7a22.webp",
       "sample of products/concrete batching plant/4d605f82-b140-4236-a5db-77beab631e6b.webp",
       "sample of products/concrete batching plant/58e38942-53dd-4bc1-a24b-dd9301841c56.webp",
       "sample of products/concrete batching plant/91e1ff94-bfd1-4093-8c3b-b3deb7d55a1b.webp",
