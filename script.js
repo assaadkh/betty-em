@@ -72,6 +72,52 @@ const projects = {
       "sample of products/Asphalt and Concrete mixer/dfcf534b-64ba-4db8-a4ed-a53ed61e8f7e.webp",
     ],
   },
+  "asphalt-batching-plant": {
+    category: "Batching plants",
+    title: "Asphalt Batching Plant",
+    description:
+      "Asphalt production plant with conveyors, processing equipment, controls, and site-ready electro-mechanical systems for reliable batching operation.",
+    images: [
+      "sample of products/Asphalt bactching plant/cover.webp",
+      "sample of products/Asphalt bactching plant/15d611c8-0da4-45a7-ab8d-04cdf4ba0486.webp",
+      "sample of products/Asphalt bactching plant/60b13d30-12d1-488d-acc8-131439ffd59c.webp",
+      "sample of products/Asphalt bactching plant/aba2e9dc-d105-4fdb-9995-74eacbb7009b.webp",
+      "sample of products/Asphalt bactching plant/c21f3329-2980-48ee-a088-0b8bcfc28082.webp",
+    ],
+  },
+  "concrete-batching-plant": {
+    category: "Batching plants",
+    title: "Concrete Batching Plant",
+    description:
+      "Concrete batching system for aggregate storage, transfer, dosing, and controlled mixing. Built around production reliability and practical site operation.",
+    images: [
+      "sample of products/concrete batching plant/cover.webp",
+      "sample of products/concrete batching plant/1a561b30-7773-4a75-baa4-d5b3183f7a22.webp",
+      "sample of products/concrete batching plant/4d605f82-b140-4236-a5db-77beab631e6b.webp",
+      "sample of products/concrete batching plant/58e38942-53dd-4bc1-a24b-dd9301841c56.webp",
+      "sample of products/concrete batching plant/91e1ff94-bfd1-4093-8c3b-b3deb7d55a1b.webp",
+      "sample of products/concrete batching plant/a701eec6-6865-4f99-8a05-412861940491.webp",
+      "sample of products/concrete batching plant/b58f6c88-43a2-4ecc-b3be-0a55611801a2.webp",
+    ],
+  },
+  "concrete-mixer": {
+    category: "Mixing systems",
+    title: "Concrete Mixer",
+    description:
+      "Heavy-duty concrete mixer with mechanical drive components and electro-mechanical integration for demanding construction material preparation.",
+    images: [
+      "sample of products/concrete mixer/33a6ea02-14e9-4f11-9360-c1a042b1e417.webp",
+    ],
+  },
+  "organic-fertilizer-facility": {
+    category: "Production facilities",
+    title: "Organic Fertilizer Facility",
+    description:
+      "Integrated organic fertilizer production facility with conveyors, processing equipment, control panel, and coordinated production flow.",
+    images: [
+      "sample of products/organic fertilizer facility/1a561b30-7773-4a75-baa4-d5b3183f7a22.webp",
+    ],
+  },
 };
 
 const modal = document.querySelector("#project-modal");
